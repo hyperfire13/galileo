@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>A. Fix the sentence. (Capitalize the first word only and add spaces per word).
+      Note: Assume that the string is a variable.</p>
+      
+      TheQuickBrownFoxJumpsOverTheLazyDog.
+      <button onclick="start()">click me</button>
+</body>
+</html>
+
+<script text="text/javascript">
+  function start() {
+    var TheQuickBrownFoxJumpsOverTheLazyDog;
+    var varToString = varObj => Object.keys(varObj)[0];
+    var x  = varToString({TheQuickBrownFoxJumpsOverTheLazyDog}).replace(/([A-Z])/g, ' $1').trim();
+    x = x.toLowerCase()
+    x = x.charAt(0).toUpperCase() + x.slice(1)
+    alert(x)
+  }
+  
+</script>
